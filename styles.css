@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao li {
+    margin-left: 20px;
+}
+
+.navegacao h3{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navegacao h3:hover{
+    color: #e50914;
+    cursor: pointer;
+}
+
+.destaque {
+    height: 80vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%), 
+        url(img/papel-de-parede-stranger-things-estrada-hawkins.jpg.webp) center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.conteudo-destaque{
+    max-width: 50%;
+    margin-top: 60px;
+}
+
+.conteudo-destaque h1{
+    font-size: 3rem;
+    margin-bottom:  20px;
+}
+
+.conteudo-destaque p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.botoes button:hover{
+
+    transform: scale(1.1);
+}
+
+.assistir {
+    background-color: white;
+    color: black;
+}
+
+.info{
+    background-color: rgb(90, 89, 89);
+    color: rgb(255, 255, 255);
+}
+
+.categoria {
+    padding: 20px 50px;
+}
+
+.categoria h2{
+    margin-bottom: 20px;
+    font-size: 1,5rem;
+}
+
+.carrossel{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px 0px;
+}
+
+.item {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    border-radius: 4px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
