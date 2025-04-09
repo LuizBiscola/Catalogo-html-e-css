@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista - Biscola Flix</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">Biscola Flix</div>
+            <ul class="navegacao">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="mylist.html" class="active-nav">Minha lista</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="container-header">
+                <span>Minha Lista de Filmes e Séries</span>
+                <button onclick="openModal()" id="btn-adicionar">
+                    <i class='bx bx-plus'></i>
+                    Adicionar
+                </button>
+            </div>
+
+            <div class="carrossel" id="lista-filmes">
+                
+            </div>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <h2>Adicionar à Minha Lista</h2>
+
+                    <label for="m-nome">Título</label>
+                    <input id="m-nome" type="text" required />
+
+                    <label for="m-funcao">Gênero</label>
+                    <input id="m-funcao" type="text" required />
+
+                    <label for="m-foto">URL do Poster</label>
+                    <input id="m-foto" type="text" placeholder="https://exemplo.com/poster.jpg" />
+
+                    <div class="preview-container">
+                        <img id="foto-preview" class="preview-image" alt="Prévia do poster">
+                    </div>
+
+                    <div class="modal-buttons">
+                        <button type="button" onclick="closeModal()" class="btn-cancelar">Cancelar</button>
+                        <button type="submit" id="btnSalvar" class="btn-salvar">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
